@@ -4,30 +4,31 @@
 int main()
 {
 	int ch,n,arr[20];
-	printf("\nSize of the array-:");
+	printf("\nSize of the array : ");
 	scanf("%d",&n);
-	printf("\nEnter the elements of the array-:");
-	for(int j=0;j<n;j++)
+	printf("\nEnter the elements of the array\n");
+	for(int j = 0; j < n; j++)
 	{
+		printf("A[%d] = ", j);
 		scanf("%d",&arr[j]);
 	}
-	printf("\The elements of the array you entered is-:");
-	for(int j=0;j<n;j++)
+	printf("\nThe elements of the array you entered is\n");
+	for(int j = 0; j < n; j++)
 	{
-		printf("%d",arr[j]);
+		printf("A[%d] = %d", j, arr[j]);
 		printf("\n");
 	}
-	printf("\nEnter 1.Maximum Element \n2.Minimum Element \n3.Sum Of All Elements \n4.Product Of Non-Zero Elements are");
+	printf("\n1.Maximum Element \n2.Minimum Element \n3.Sum Of All Elements \n4.Product Of Non-Zero Elements\n\nEnter Your Choice : ");
 	scanf("%d",&ch);
 	if(ch==1)
 	{
-		int max=arr[0];
-		for(int j=0;j<n;j++)
+		int max = arr[0];
+		for(int j = 0; j < n; j++)
 		{
-			if(max<arr[j])
-			max=arr[j];
+			if(max < arr[j])
+				max = arr[j];
 		}
-		printf("\n Maximum Element-: %d",max);
+		printf("\nMaximum Element-: %d",max);
 	}
 	if(ch==2)
 	{
